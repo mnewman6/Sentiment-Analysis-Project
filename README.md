@@ -45,7 +45,7 @@
 ### This is a backbone of our project where we present the framework of analysis and discuss challenges and outcomes. 
 
 ## **The Moving Averages:**
-### A moving average (MA) is a widely used technical indicator that smooths out price trends by filtering out the “noise” from random short-term price fluctuations. Moving averages can be constructed in several different ways, and employ different numbers of days for the averaging interval. In our project we use 9 trading days for Short Moving Average (SMA_9) and 50 days for Long Moving average (SMA_50). An MA with a short time frame will react much quicker to price changes than an MA with a long look back period. In the figure below, the 9-day moving average more closely tracks the actual price than the 50-day moving average does. 
+### [A Moving Average (MA)](https://www.investopedia.com/terms/m/movingaverage.asp) is a widely used technical indicator that smooths out price trends by filtering out the “noise” from random short-term price fluctuations. Moving averages can be constructed in several different ways, and employ different numbers of days for the averaging interval. In our project we use 9 trading days for Short Moving Average (SMA_9) and 50 days for Long Moving average (SMA_50). An MA with a short time frame will react much quicker to price changes than an MA with a long look back period. In the figure below, the 9-day moving average more closely tracks the actual price than the 50-day moving average does. 
 
 ## **Trading Strategies—Crossovers** 
 ### Crossovers are one of the main moving average strategies. The first type is a price crossover, which is when the price crosses above or below a moving average to signal a potential change in trend. When the shorter-term MA crosses above the longer-term MA, it's a buy signal, as it indicates that the trend is shifting up. This is known as a "golden cross." 
@@ -90,4 +90,7 @@
     * Overlay plotly graphs
     * Longer period of back testing
     * Looking over social media platform 
-
+    
+## ```Work Cited For Conceptual Framework```
+- [A Beginer's Guide for Sentiment Analysis](https://algotrading101.com/learn/sentiment-analysis-python/)
+- [Sentiment Analysis using VADER](https://blog.quantinsti.com/vader-sentiment/)
