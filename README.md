@@ -46,7 +46,7 @@
 ### Stock trading is highly influenced by the sentiment of news headlines, comments on social media, and internet platforms. It's impossible to read all tweets or news in very short period time because the effect of this in stock price is fast. So, the Natural Language Processing tools and Algorithmic Trading would make this a lot easier. A well-set program could potentially scan all sorts of text over the millions of webpages and social media to determine the subjective information or emotional state of the writer. In this project we are using VADER library to rank the sentiments of news related to our chosen stock to determine Entry/Exit signals. 
 
 ## **C. Machine Learning Model** 
-## Here, we are predicting stock price fluctuation using machine learning model which uses historical stock prices, doing the back testing using LSTM model we able to predict future price movement of the slected stock. We found this model is really interesting because it lacks human emotion which predection prices.
+## Here, we are predicting stock price movement using machine learning model which uses historical stock prices, doing some back testing using LSTM model, we are able to predict future price movement of the slected stock. We found this model is really interesting because it lacks human emotion and biasness while predecting prices.
 ![](https://github.com/mnewman6/Sentiment-Analysis-Project/blob/master/Images/machine%20learning1.png)
 
 ## Fetching Data and Data Presentation: 
