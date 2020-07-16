@@ -100,3 +100,4 @@
 - [A Beginer's Guide for Sentiment Analysis](https://algotrading101.com/learn/sentiment-analysis-python/)
 - [Sentiment Analysis using VADER](https://blog.quantinsti.com/vader-sentiment/)
 - [Price Prediction Using Python](https://medium.com/@randerson112358/stock-price-prediction-using-python-machine-learning-e82a039ac2bb)
+- [Stock Price Prediction using Machine Learning Model](https://medium.com/@randerson112358/stock-price-prediction-using-python-machine-learning-e82a039ac2bb)
