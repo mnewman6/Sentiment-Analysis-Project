@@ -1,5 +1,5 @@
 # **FINTECH BOOTCAMP PROJECT 2**
-# **Stock Trading With Sentiment Analysis**
+# **Stock Trading using Machine Learning model for Technical & Sentiment Analysis**
 ## **Prepared By:**
 * **Samir Sidi** 
 * **Kevin Lacap** 
