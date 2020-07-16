@@ -1,20 +1,11 @@
 # **FINTECH BOOTCAMP PROJECT 2**
-# **Stock Trading With Sentiment Analysis**
+# **Stock Trading using Machine Learning model for Technical & Sentiment Analysis**
 ## **Prepared By:**
 * **Samir Sidi** 
 * **Kevin Lacap** 
 * **Matt Newman** 
 * **Subash Mishra** 
 
-# **Introduction**
-![](https://cdn.benzinga.com/files/imagecache/1024x768xUP/images/story/2012/shutterstock_101193922_0.jpg)
-
-## **Algorithmic Trading:** 
-### Algo trading automates the trading process in financial markets by rapidly and precisely executing orders based on a set of defined rules. It removes human error and the dangers of acting on emotion. 
-
-## **Sentiment Analysis:**
-![](https://d1rwhvwstyk9gu.cloudfront.net/2017/07/Crowsourced-Sentiment-Analysis-Strategy_2.jpg)
-### Stock trading is highly influenced by the sentiment of news headlines, comments on social media, and internet platforms. It's impossible to read all tweets or news in very short period time because the effect of this in stock price is fast. So, the Natural Language Processing tools and Algorithmic Trading would make this a lot easier. A well-set program could potentially scan all sorts of text over the millions of webpages and social media to determine the subjective information or emotional state of the writer. In this project we are using VADER library to rank the sentiments of news related to our chosen stock to determine Entry/Exit signals. 
 
 ## **Overview:** 
 
@@ -32,18 +23,12 @@
 ## **Fetching Data from API:**
 ### In order to ensure reliability and validity of this model, it is important to have an authentic data source to run our analysis. In this project we are using Yahoo API which able us to pull raw stock data from internet to our working platform in real-time. Yahoo API allows us to grab adjusted close than just regular close which makes our analysis more accurate and reliable. For this project we going to be using stock of Boeing as default tickers but we will have an interactive platform to pass any tradable ticker(s). For the demonstration we have selected last week trading data.
 
-## Data Table
-![](https://github.com/MishraSubash/project-Repo-/blob/master/table1.png)
+## **Introduction to Project**
+![](https://cdn.benzinga.com/files/imagecache/1024x768xUP/images/story/2012/shutterstock_101193922_0.jpg)
+### Trading, expecting to make money is more stressful than we think because the stcoks price is affected by severals factors including inside and outside information of the company. Current Stock Price, Dividend Payout are considered as insider information whereas comments and sentiment of people and news article over the internet are outside factors to effect stock price. Here in our model we use there crucial analysis to predict buy and sell signals. 
 
-
-
-
-## *Challenges while cleaning data*
-### Rather than jumping directly in process of data cleaning, we realized which 'Close' should be used. We think it important to address this question. The regular 'Close' doesn't reflect recent divided announcement and stock splits so we thought this is important to include in our model. Adjusted Close is for accuracy and reliability. 
-
-## **Data Analysis, Crossover Fitting and Average Moving Calculation**
-### This is a backbone of our project where we present the framework of analysis and discuss challenges and outcomes. 
-
+## **A. Technical Annlysis**   
+### Under the technical analysis, we exclusively us moving averages to generate trade signals (Buy/Sell).
 ## **The Moving Averages:**
 ### [A Moving Average (MA)](https://www.investopedia.com/terms/m/movingaverage.asp) is a widely used technical indicator that smooths out price trends by filtering out the “noise” from random short-term price fluctuations. Moving averages can be constructed in several different ways, and employ different numbers of days for the averaging interval. In our project we use 9 trading days for Short Moving Average (SMA_9) and 50 days for Long Moving average (SMA_50). An MA with a short time frame will react much quicker to price changes than an MA with a long look back period. In the figure below, the 9-day moving average more closely tracks the actual price than the 50-day moving average does. 
 
@@ -55,6 +40,26 @@
 
 ## *Challenges while implementing Moving Averages*
 ### Moving averages are calculated based on historical data, and nothing about the calculation is predictive in nature. One major problem is that, if the price action becomes choppy, the price may swing back and forth, generating multiple trend reversal or trade signals. Moving averages work quite well in strong trending conditions but poorly in choppy or ranging conditions. Adjusting the time frame can remedy this problem temporarily, although at some point, these issues are likely to occur regardless of the time frame chosen for the moving average(s). 
+
+## **B. Sentiment Analysis:**
+![](https://d1rwhvwstyk9gu.cloudfront.net/2017/07/Crowsourced-Sentiment-Analysis-Strategy_2.jpg)
+### Stock trading is highly influenced by the sentiment of news headlines, comments on social media, and internet platforms. It's impossible to read all tweets or news in very short period time because the effect of this in stock price is fast. So, the Natural Language Processing tools and Algorithmic Trading would make this a lot easier. A well-set program could potentially scan all sorts of text over the millions of webpages and social media to determine the subjective information or emotional state of the writer. In this project we are using VADER library to rank the sentiments of news related to our chosen stock to determine Entry/Exit signals. 
+
+## **C. Machine Learning Model** 
+## Here, we are predicting stock price movement using machine learning model which uses historical stock prices, doing some back testing using LSTM model, we are able to predict future price movement of the slected stock. We found this model is really interesting because it lacks human emotion and biasness while predecting prices.
+![](https://github.com/mnewman6/Sentiment-Analysis-Project/blob/master/Images/machine%20learning1.png)
+
+## Fetching Data and Data Presentation: 
+### In order to ensure the reliability of data, we pull data from using Yahoo API which is we think more accurate and reliable than any free version of API out there. Boeing is our default ticker but our platform allows to pass any tradable ticker(s).
+
+## Data Table
+![](https://github.com/MishraSubash/project-Repo-/blob/master/table1.png)
+
+## *Challenges while cleaning data*
+### Rather than jumping directly in process of data cleaning, we realized which 'Close' should be used. We think it important to address this question. The regular 'Close' doesn't reflect recent divided announcement and stock splits so we thought this is important to include in our model. Adjusted Close is for accuracy and reliability. 
+
+## **Data Analysis, Crossover Fitting and Average Moving Calculation**
+### This is a backbone of our project where we present the framework of analysis and discuss challenges and outcomes. 
 
 ### We found the following result while using short and long moving averages. 
 ![](https://github.com/MishraSubash/project-Repo-/blob/master/SMA%20vs%20LMA1.png)
@@ -95,3 +100,4 @@
 - [A Beginer's Guide for Sentiment Analysis](https://algotrading101.com/learn/sentiment-analysis-python/)
 - [Sentiment Analysis using VADER](https://blog.quantinsti.com/vader-sentiment/)
 - [Price Prediction Using Python](https://medium.com/@randerson112358/stock-price-prediction-using-python-machine-learning-e82a039ac2bb)
+- [Stock Price Prediction using Machine Learning Model](https://medium.com/@randerson112358/stock-price-prediction-using-python-machine-learning-e82a039ac2bb)
